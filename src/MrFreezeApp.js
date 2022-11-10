@@ -1,11 +1,11 @@
-import './MrFreezeApp.css';
+
+import Navbar from './Components/NavbarComponent/Navbar';
 
 function MrFreezeApp() {
   return (
     <div className="App">
-      <header className="App-header">
-        MrFreeze
-      </header>
+      <Navbar title= 'navbar' />
+
     </div>
   );
 }
