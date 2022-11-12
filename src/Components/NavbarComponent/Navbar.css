@@ -1,10 +1,9 @@
 .navbar-container {
-  background-color: rgb(49, 45, 45);
   display: flex;
   flex-flow: row wrap;
   width: 100%;
   height: 90px;
-  justify-content: end;
+  justify-content: space-between;
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -60,8 +59,4 @@ li.second-in-nav {
 .navbar-container a:visited {
   color: white;
   text-decoration: none;
-}
-
-body {
-  margin: 0px;
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=Navbar.css.map */
