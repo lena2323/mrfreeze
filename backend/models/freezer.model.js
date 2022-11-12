@@ -10,6 +10,6 @@ date: { type: Date, required: true},
 }, {
     timestamps: true,
 });
-const Freezer = mongoose.model('Freezer', FreezerSchema);
+const Freezer = mongoose.model('Freezer', freezerSchema);
 
 module.exports = Freezer;
