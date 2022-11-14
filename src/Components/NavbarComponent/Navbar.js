@@ -1,10 +1,19 @@
+import { Link } from "react-router-dom"
+
 const Navbar = () => {
   return (
     <nav className="navbar-container">
+      <Link to="/" className="title"> Freezers?</Link>
         <ul>
-            <li className='first-in-nav'><a href='https://www.youtube.com/watch?v=q-NKpDTwMms&ab_channel=DogwithBlog' alt='video of animals being friends' target="_blank">Being friends</a></li>
-            <li className='first-in-nav'><a href='https://www.youtube.com/watch?v=kMSDD619o7o&ab_channel=AdsofBrands' alt="video of animals being friends for Christmas"  target="_blank">Helping friends</a></li>
-            <li className='second-in-nav'><a href='https://www.youtube.com/results?search_query=animals+being+friends' alt="youtube search for animals being friends"  target="_blank">See more</a></li>
+            <li className='first-in-nav'>
+              <Link to="/">Freezers</Link>
+            </li>
+            <li className='first-in-nav'>
+              <Link to="/create">Create Freezer log</Link>
+            </li>
+            <li className='second-in-nav'>              
+            <Link to="/user">Create User</Link>
+            </li>
         </ul>
     </nav>
   )

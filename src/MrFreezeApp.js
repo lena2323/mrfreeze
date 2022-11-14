@@ -1,22 +1,22 @@
-import {BrowserRouter as Router, Route} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 import Navbar from './Components/NavbarComponent/Navbar';
 import FreezersList from './Components/FreezersListComponent/FreezersList';
-import EditFreezer from './Components/EditFreezerComponent/EditFreezer';
+import EditFreezer from './Components/EditFreezerComponent/EditFreezers';
 import CreateFreezer from './Components/CreateFreezerComponent/CreateFreezer';
-import CreateUser from './Components/CreateUserComponent/CreateUser';
+import CreateUsers from './Components/CreateUsersComponent/CreateUsers';
 
 
 function MrFreezeApp() {
   return (
     <Router>
-      <div className="App">
-        <Navbar title= 'navbar' />
-      </div>
-      <Route path="/" exact component={FreezersList}/>
-      <Route path="/edit/:id" component={EditFreezer}/>
-      <Route path="/create" component={CreateFreezer}/>
-      <Route path="/user" component={CreateUser}/>
+      <Navbar title= 'navbar' />
+      <Routes>
+      <Route path="/"  element={<FreezersList />} exact />
+      <Route path="/edit/:id" element={<EditFreezer/>}/>
+      <Route path="/create" element={<CreateFreezer/>}/>
+      <Route path="/user" element={<CreateUsers/>}/>
+      </Routes>
     </Router>
   );
 }
