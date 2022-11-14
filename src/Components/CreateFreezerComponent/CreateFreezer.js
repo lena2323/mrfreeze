@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 const CreateFreezer = () => {
   return (
-    <div>CreateFreezer</div>
+    <div className='CreateFreezer'>Create Freezer</div>
   )
 }
 

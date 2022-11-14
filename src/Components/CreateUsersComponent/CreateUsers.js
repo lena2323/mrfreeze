@@ -2,7 +2,7 @@ import React from 'react'
 
 const CreateUsers = () => {
   return (
-    <div>CreateUsers component</div>
+    <div className='CreateUsers'>CreateUsers component</div>
   )
 }
 
