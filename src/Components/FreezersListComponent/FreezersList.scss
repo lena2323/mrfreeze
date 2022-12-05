@@ -5,3 +5,9 @@
     background-color: aqua;
     height: 50vh;
 }
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
